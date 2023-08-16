@@ -1,12 +1,17 @@
 <template>
   <div class="card">
+    <!-- Display the 'name' prop passed into this component. -->
     <h3>{{ name }}</h3>
-    <p><span>Profession:</span> {{ profession }}</p>
+
+    <!-- Display the 'profession' prop passed into this component. -->
+    <p><b>Profession:</b> {{ profession }}</p>
   </div>
 </template>
 
 <script>
 export default {
+  // 'props' allows data to be passed into this component from a parent component.
+  // In this case, 'name' and 'profession' data can be passed in when this component is used.
   props: ['name', 'profession']
 }
 </script>
