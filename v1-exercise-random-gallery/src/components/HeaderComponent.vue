@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Welcome to Awesomeness</h1>
+    <h1>Random Image Gallery</h1>
   </header>
 </template>
 
