@@ -5,9 +5,16 @@
     <button @click="clickHandlerDown">-1</button>
     <button @click="clickHandlerReset">back to zero</button>
   </div>
+  <br>
+  <br>
+  <TheCheckbox />
+  <CheckBoxWithCounter />
 </template>
 
 <script>
+import TheCheckbox from './components/TheCheckbox.vue'
+import CheckBoxWithCounter from './components/CheckBoxWithCounter.vue'
+
 export default {
   data() {
     return {
@@ -24,12 +31,14 @@ export default {
     clickHandlerReset() {
       this.counter = 0
     }
-  }
+  },
+  components: {
+    TheCheckbox, 
+    CheckBoxWithCounter
+  },
 }
 </script>
 
 <style scoped>
-button {
-  margin: 1rem;
-}
+
 </style>
