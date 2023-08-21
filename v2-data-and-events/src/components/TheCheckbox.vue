@@ -1,7 +1,7 @@
 <template>
   <div class="ComponentContainer">
     <h3>The Checkbox Component</h3>
-    <input type="checkbox" v-model="isChecked"/>
+    <input type="checkbox" v-model="isChecked" />
     <div>The checkbox is On: {{ isChecked }}</div>
   </div>
 </template>
@@ -16,6 +16,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

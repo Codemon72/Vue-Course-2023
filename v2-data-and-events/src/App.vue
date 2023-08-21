@@ -1,12 +1,10 @@
 <template>
-  <div>
+  <div class="ComponentContainer">
     <div>Counter: {{ counter }}</div>
     <button @click="clickHandlerUp">+1</button>
     <button @click="clickHandlerDown">-1</button>
     <button @click="clickHandlerReset">back to zero</button>
   </div>
-  <br>
-  <br>
   <TheCheckbox />
   <CheckBoxWithCounter />
 </template>
@@ -33,12 +31,10 @@ export default {
     }
   },
   components: {
-    TheCheckbox, 
+    TheCheckbox,
     CheckBoxWithCounter
-  },
+  }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
