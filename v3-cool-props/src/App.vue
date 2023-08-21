@@ -1,5 +1,6 @@
 <template>
   <div class="ComponentContainer">
+    <h3>Input Value displayed in div in one Component</h3>
     <input type="text" @input="inputHandler" />
     <div>{{ inputValue }}</div>
   </div>
