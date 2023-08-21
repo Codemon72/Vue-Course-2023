@@ -8,7 +8,21 @@
 
 <script>
 export default {
-  props: ['displayText']
+  // simple way to declare props for max 4 props
+  // props: ['displayText']
+
+  // the good way to declare props and best if nothing more is to declare than type: String
+  // props: {
+  //   displayText: String
+  // }
+
+  // or more sophisticated and best practice
+  props: {
+    displayText: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 

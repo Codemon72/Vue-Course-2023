@@ -3,6 +3,8 @@
     <h3>Parent with Input Field</h3>
     <input type="text" @input="inputHandler" />
 
+    <!-- <ChildWithDisplay v-bind:displayText="inputValue" /> -->
+    <!-- can be shortend to:  -->
     <ChildWithDisplay :displayText="inputValue" />
   </div>
 </template>
