@@ -1,15 +1,12 @@
 <template>
   <div class="ComponentContainer">
     <input type="text" @input="inputHandler" />
-    <div>{{ inputValue }}</div>
+    <div v-if="inputValue">{{ inputValue }}</div>
+    <div v-else>Please write something here</div>
   </div>
-
-  <ConditionalDisplay />
 </template>
 
 <script>
-import ConditionalDisplay from './components/ConditionalDisplay.vue'
-
 export default {
   data() {
     return {
@@ -20,9 +17,6 @@ export default {
     inputHandler(event) {
       this.inputValue = event.target.value
     }
-  },
-  components: {
-    ConditionalDisplay
   }
 }
 </script>
