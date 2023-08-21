@@ -5,10 +5,12 @@
   </div>
 
   <ConditionalDisplay />
+  <ParentWithInput />
 </template>
 
 <script>
 import ConditionalDisplay from './components/ConditionalDisplay.vue'
+import ParentWithInput from './components/InputWithDisplayIn2Components/ParentWithInput.vue'
 
 export default {
   data() {
@@ -22,7 +24,8 @@ export default {
     }
   },
   components: {
-    ConditionalDisplay
+    ConditionalDisplay,
+    ParentWithInput
   }
 }
 </script>
