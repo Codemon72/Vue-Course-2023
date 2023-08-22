@@ -1,5 +1,6 @@
 <template>
   <div class="ComponentContainer">
+    <h3>MyVariableButton Component</h3>
     
     <!-- A button that displays the text from the `buttonText` prop. When clicked, it calls the `clickHandler` method -->
     <button @click="clickHandler">{{ buttonText }}</button>

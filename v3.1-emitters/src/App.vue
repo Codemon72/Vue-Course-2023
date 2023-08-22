@@ -1,5 +1,7 @@
 <template>
   <h1>V3.1 Emitters</h1>
+  <h3>App Component</h3>
+  
   <div class="ComponentContainer">
 
     <!-- Displaying the value of `counter` from the component's data -->

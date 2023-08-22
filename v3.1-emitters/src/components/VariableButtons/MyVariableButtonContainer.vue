@@ -1,5 +1,7 @@
 <template>
   <div class="ComponentContainer">
+    <h3>ComponentContainer Component</h3>
+
     <!-- Displays the value of `counter` from the component's data -->
     <div>{{ counter }}</div>
 

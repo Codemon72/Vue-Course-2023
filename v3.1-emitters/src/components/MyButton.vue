@@ -1,5 +1,7 @@
 <template>
   <div class="ComponentContainer">
+    <h3>MyButton Component</h3>
+    
     <!-- A button that listens for a click event. When clicked, it calls the `clickHandler` method -->
     <button @click="clickHandler">UP</button>
   </div>
