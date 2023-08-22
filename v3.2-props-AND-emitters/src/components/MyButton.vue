@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="ComponentContainer">
+    <h4>MyButton Component</h4>
     <button @click="clickHandler">{{ buttonText }}</button>
   </div>
 </template>

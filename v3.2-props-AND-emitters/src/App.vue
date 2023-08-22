@@ -1,6 +1,9 @@
 <template>
-  <DisplayCounter :valueToShow="counter" />
-  <ButtonBox @oneOfTheButtonsWasClicked="handleIt" />
+  <div class="ComponentContainer">
+    <h3>App Component</h3>
+    <DisplayCounter :valueToShow="counter" />
+    <ButtonBox @oneOfTheButtonsWasClicked="handleIt" />
+  </div>
 </template>
 
 <script>

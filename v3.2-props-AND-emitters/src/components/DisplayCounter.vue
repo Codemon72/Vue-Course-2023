@@ -1,5 +1,8 @@
 <template>
-  <div>{{ valueToShow }}</div>
+  <div class="ComponentContainer">
+    <h4>DisplayCounter Component</h4>
+    <div>{{ valueToShow }}</div>
+  </div>
 </template>
 
 <script>
