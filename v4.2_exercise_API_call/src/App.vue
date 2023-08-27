@@ -1,4 +1,5 @@
 <template>
+  <h1>Basic API Call</h1>
   <div v-if="isLoading">Loading...</div>
   <div v-else>
     <div class="flex">
