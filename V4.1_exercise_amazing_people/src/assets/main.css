@@ -1,5 +1,10 @@
-.ComponentContainer {
-  outline: 2px solid black;
-  padding: 2rem;
-  margin: 2rem;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+root {
+  box-shadow: 5px 5px 10px gray;
+}
+
+img {
+  object-fit: cover;
 }
