@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <input type="range" min="0" max="100" v-model="value" @input="updateValue" class="slider">
-    <input :value="value" @input="updateValue" class="value" />
+    <input type="range" min="0" max="100" v-model="value" @input="updateValue" class="slider" />
+    <input type="text" v-model="value" @input="updateValue" class="value" />
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
   emits: ['sliderValue'],
   methods: {
     updateValue() {
+      if (this.value > 100) {
+        this.value = 100
+      } else if (this.value < 0) {
+        this.value = 0
+      }
       this.$emit('sliderValue', this.value)
     }
   }
@@ -25,7 +30,7 @@ export default {
 .container {
   display: flex;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .slider {
   -webkit-appearance: none;
