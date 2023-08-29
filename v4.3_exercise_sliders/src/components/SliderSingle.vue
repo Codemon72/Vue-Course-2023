@@ -32,7 +32,10 @@ export default {
   align-items: center;
   padding: 0.5rem;
 }
-.slider {
+input[type='range'].slider {
+  accent-color: #4abf94;
+}
+/* .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
@@ -56,10 +59,11 @@ export default {
   border-radius: 50%;
   background: #4abf94;
   cursor: pointer;
-}
+} */
 .value {
   font-size: 1.3em;
   background-color: #fff;
+  margin-left: 1rem;
   padding: 5px;
   border-radius: 6px;
   height: 1.5rem;
