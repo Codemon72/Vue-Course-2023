@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <input type="range" min="0" max="100" v-model="value" @input="updateValue" class="slider">
-    <span class="value">{{ value }}</span>
+    <input :value="value" @input="updateValue" class="value" />
   </div>
 </template>
 

@@ -19,9 +19,11 @@ export default {
   methods: {
     adjustSliderValue1(value) {
       this.sliderValue1 = value
+      this.adjustTotal()
     },
     adjustSliderValue2(value) {
       this.sliderValue2 = value
+      this.adjustTotal()
     },
     adjustSliderValue3(value) {
       this.sliderValue3 = value
@@ -70,6 +72,6 @@ export default {
 }
 .total {
   margin-top: 1rem;
-  font-size: large;
+  font-size: 1.5em;
 }
 </style>
