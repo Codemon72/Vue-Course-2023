@@ -16,10 +16,10 @@ export default {
   methods: {
     updateValue() {
       // Remove non-numeric characters from the enteredValue using a regular expression
-      const numericValue = this.value.replace(/\D/g, "");
-      
+      const numericValue = this.value.replace(/\D/g, '')
+
       // Update the value to reflect the cleaned value
-      this.value = numericValue;
+      this.value = numericValue
 
       // prevent entering numbers <0 and >100
       if (this.value > 100) {
