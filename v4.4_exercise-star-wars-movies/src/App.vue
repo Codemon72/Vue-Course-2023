@@ -34,14 +34,16 @@ export default {
 <style scoped>
 .main-section {
   display: flex;
-  gap: 20px;
-  margin: 0 auto;
-  width: 820px;
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 1050px;
 }
 
 .main-section > div {
-  background-color: lightcoral;
-  width: 400px;
+  background-color: lightseagreen;
+  width: 500px;
   min-height: 600px;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 </style>

@@ -44,7 +44,7 @@ export default {
 .movie-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
 }
 </style>

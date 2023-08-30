@@ -1,6 +1,6 @@
 <template>
   <div v-if="movieObject == undefined">Select a Movie on the Left</div>
-  <div v-else>
+  <div v-else class="movie-details">
     <h2>Episode {{ movieObject.episode_id }} - {{ movieObject.title }}</h2>
     <p>
       {{ movieObject.opening_crawl }}
@@ -47,4 +47,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.movie-details {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 66px;
+}
+</style>
