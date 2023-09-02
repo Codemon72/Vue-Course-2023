@@ -6,15 +6,22 @@
       <img
         :src="pokemon.sprites.other['official-artwork'].front_default"
         :alt="pokemon.name"
-        class="image"
+        class="image pokemon_detail"
       />
-      <div>
+      <div class="pokemon_detail">
+        <strong>Weight: </strong><span>{{ pokemon.weight }} kg</span>
+      </div>
+      <div class="pokemon_detail">
         <strong>Abilities:</strong>
         <br />
         {{ pokemon.abilities.map((ability) => ability.ability.name).join(', ') }}
       </div>
-      <br />
-      <div>
+      <div v-if="pokemon.held_items && pokemon.held_items.length > 0" class="pokemon_detail">
+        <strong>Held Items:</strong>
+        <br />
+        {{ pokemon.held_items.map(item => item.item.name).join(', ') }}
+      </div>
+      <div class="pokemon_detail">
         <strong>Type:</strong>
         <br />
         {{ pokemon.types.map((type) => type.type.name).join(', ') }}
@@ -33,7 +40,7 @@ export default {
   },
   async created() {
     //  `this.$route` is an object that contains information about the current route. This object includes several properties such as `path`, `params`, `query`, etc.
-    // `this.$route.query` is an object that contains the URL query parameters. For example, if the URL is http://example.com/?name=pikachu, then this.$route.query will be { name: 'pikachu' }.
+    // For example, if the URL is http://example.com/?name=pikachu, then this.$route.query will be { name: 'pikachu' }.
 
     const pokemonName = this.$route.query.name // Get the pokemon name from the URL query string 'name'
     const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokemonName}` // Construct the API endpoint
@@ -66,5 +73,8 @@ export default {
   background-color: #fff;
   max-width: 400px;
   margin: 0 auto;
+}
+.pokemon_detail {
+  margin-bottom: 1rem;
 }
 </style>

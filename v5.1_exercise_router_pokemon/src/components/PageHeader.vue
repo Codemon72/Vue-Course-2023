@@ -2,7 +2,7 @@
   <header>
     <nav>
       <RouterLink class="nav-item" to="/">Home</RouterLink>
-      <RouterLink class="nav-item" to="/details">Details</RouterLink>
+      <!-- <RouterLink class="nav-item" to="/details">Details</RouterLink> -->
     </nav>
   </header>
 </template>
@@ -20,6 +20,10 @@ header {
   color: white;
   border-radius: 1rem;
   width: 2rem;
-  margin: 0 1rem;
+  text-decoration: none; /* Remove the underline */
+}
+a {
+  
+  color: black; /* Change the color to black */
 }
 </style>

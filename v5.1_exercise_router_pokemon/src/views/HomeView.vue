@@ -6,7 +6,7 @@
     <div v-if="isLoading">Loading...</div>
     <!-- Display list of pokemons if data has been loaded -->
     <div v-else>
-      <div class="flex">
+      <div class="pokemon_list">
         <!-- For each pokemon in the 'pokemons' array, create a list item and a router link -->
         <!-- The 'to' attribute of the RouterLink is dynamically bound to the pokemon's name -->
         <RouterLink
@@ -50,20 +50,26 @@ export default {
 </script>
 
 <style scoped>
-.flex {
+.pokemon_list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 400px;
+  gap: .5rem;
+
 }
 .list-item {
   list-style-type: none; /* Remove the dot */
   width: 200px;
   margin-left: 2rem;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px lightgray;
   border: 1px solid #ddd;
   margin-bottom: 5px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 18px;
 }
 a {
   text-decoration: none; /* Remove the underline */
